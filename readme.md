@@ -1,29 +1,36 @@
-NetValue: The Gas-Adjusted Portfolio Tracker
-"Stop looking at what you have; start looking at what you can actually keep."
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-🚩 The Problem: The "DeFi Illusion"
-Most portfolio trackers show you a "Gross Balance." If you have $100 in a random token on Ethereum, but it costs $80 in gas to swap it, you don't actually have $100—you have $20. For retail users and "small fish," DeFi math is brutal. High gas fees create "Dust," where assets are technically in your wallet but economically impossible to move.
+## Getting Started
 
-💡 The Solution: NetValue
-NetValue is a minimalist DeFi dashboard powered by 1inch APIs that calculates your Net Liquidity in real-time. It subtracts the real-time cost of exit (swapping to stables/ETH) from your balance, giving you a brutally honest view of your wealth.
+First, run the development server:
 
-🛠 How it Works (1inch Integration)
-1inch Portfolio API: To fetch real-time multi-chain balances and token metadata.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-1inch Gas Price API: To pull live Gwei across 10+ chains (Ethereum, Base, Arbitrum, etc.).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1inch Spot Price API: To get the most accurate valuation of assets before gas subtraction.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-🚀 Key Features
-Net Reality Toggle: Instantly see your portfolio value after estimated transaction costs.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Dust Detection: Automatically flags tokens that are "locked" by current gas prices.
+## Learn More
 
-Cross-Chain Comparison: Shows you exactly how much cheaper your current portfolio management would be on L2s versus Mainnet.
+To learn more about Next.js, take a look at the following resources:
 
-🏗 Tech Stack
-Frontend: Next.js, Tailwind CSS, Lucide Icons, Framer Motion.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Data: 1inch Developer Portal (Portfolio & Gas APIs).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-UI/UX: Built with Lovable.dev for a premium, aesthetic finish.
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
